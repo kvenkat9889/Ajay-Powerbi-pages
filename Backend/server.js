@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const PORT = 3000;
+const PORT = 3432;
 
 // Serve static files from the public directory
 app.use(express.static('public'));
@@ -18,5 +18,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://44.223.23.145:${PORT}`);
 });
